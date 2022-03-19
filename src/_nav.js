@@ -43,10 +43,17 @@ const _nav = [
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
-    component: CNavItem,
+    component: CNavGroup,
     name: 'Gestion Utilisateurs',
-    to: '/Gestion Utilisateurs/listeUtilisateurs',
+    to: '/GestionUtilisateurs',
     icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'liste Attente',
+        to: '/GestionUtilisateurs/listeAttente',
+      },
+    ],
   },
   // {
   //   component: CNavTitle,
